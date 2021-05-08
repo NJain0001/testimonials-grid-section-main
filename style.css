@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --dark-gray-blue: hsl(217, 19%, 35%);
+  --black-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-gray-blue: hsl(210, 46%, 95%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  padding: 4rem 2rem;
+  background-color: var(--light-gray-blue);
+}
+
+.card {
+  margin-bottom: 2rem;
+  padding: 2.5rem 2.9rem;
+  border-radius: 2%;
+  z-index: -2;
+}
+
+.card-one {
+  background-color: var(--violet);
+  color: var(--white);
+  position: relative;
+}
+
+.card-one::after {
+  content: "";
+  background: url("./images/bg-pattern-quotation.svg") 0 0 no-repeat;
+  position: absolute;
+  width: 104px;
+  height: 102px;
+  top: 0;
+  right: 7%;
+  z-index: -1;
+}
+
+.card-two {
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+}
+
+.card-three {
+  background-color: var(--white);
+  color: var(--dark-gray-blue);
+}
+
+.card-four {
+  background-color: var(--black-blue);
+  color: var(--white);
+}
+
+.card-five {
+  background-color: var(--white);
+  color: var(--dark-gray-blue);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.border-purple {
+  border: 3px hsl(263, 87%, 63%) solid;
+}
+
+.header-information {
+  margin-left: 2rem;
+}
+
+.user-title {
+  opacity: 50%;
+  font-size: 0.85rem;
+}
+
+.attention-grabber {
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.additional-information {
+  opacity: 70%;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
